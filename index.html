@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navegation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Presentación -->
+  <header class="hero bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="title">Bárbara Aravena Rivera</h1>
+        <p class="definition">Desarrolladora Web Full Stack apasionada por la innovación en la resolución de problemas y la optimizacion de procesos.</p>
+    </div>
+  </header>
+
+  <!-- Sobre mi -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Sobre mí</h2>
+      <p class="lead text-right">Desarrolladora web Full Stack con experiencia en JavaScript, especializada en la creación de aplicaciones dinámicas, responsivas y escalables. Con sólidos conocimientos en frontend y backend, así como en bases de datos.</p>
+      <p class="lead text-right">Destaco por mi capacidad para resolver problemas complejos y adaptarme a nuevas tecnologías. Con una comunicación efectiva, puedo traducir conceptos técnicos a audiencias no especializadas, facilitando la colaboración en equipos multidisciplinarios. Me apasiona trabajar en equipo, manteniendo una gestión eficiente del tiempo y asegurando la entrega de proyectos de alta calidad dentro de los plazos establecidos. Mi enfoque en el aprendizaje continuo me permite enfrentar con éxito los desafíos en el desarrollo web.</p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Habilidades</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4>HTML/CSS</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>JavaScript</h4>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>React/Node.js</h4>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Proyectos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/proyecto1.jpeg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1: Aplicación de Tareas</h5>
+              <p class="card-text">Una aplicación web para gestionar tareas de forma diaria, semanal o mensual usando React y Firebase.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/proyecto2.jpeg" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2: E-commerce</h5>
+              <p class="card-text">Desarrollo de una tienda en línea completa con pasarela de pago integrada usando Node.js y MongoDB.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/proyecto3.jpeg" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3: Plataforma de Blogging</h5>
+              <p class="card-text">Creación de una plataforma para bloggers con panel de administración y comentarios en tiempo real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Contacto</h2>
+      <form id="contactForm" class="mt-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <div id="formResponse" class="mt-3"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2024 Bárbara Aravena Rivera. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(238, 206, 225);
+  }
+
+  #navegation{
+    font-style: italic;
+    font-size: large;
+  }
+
+  .title{
+    color: rgb(9, 53, 94);
+  }
+
+  .definition{
+    font-size: larger; 
+    color: rgb(9, 53, 94); 
+    font-style: italic;
+  }
+
+  .hero {
+    background-image: url(img/imagenfondo.jpeg);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: justify;
+  }
+  
+  #skills .progress {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
